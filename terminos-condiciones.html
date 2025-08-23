@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nago Car Rental | Términos y Condiciones</title>
+    <meta name="description" content="Términos y Condiciones de Nago Car Rental. Conoce las condiciones de uso de nuestros servicios de renta de vehículos.">
+    <meta name="keywords" content="términos y condiciones, renta de autos, cancún, contrato de renta">
+    <meta name="author" content="Nago Car Rental">
+    <link rel="canonical" href="https://www.nagocarrentals.com/terminos-condiciones">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #e60000;
+            --primary-dark: #cc0000;
+            --secondary-color: #ff3333;
+            --accent-color: #ff6b61;
+            --light-color: #f5f5f5;
+            --dark-color: #222;
+            --gray-light: #f0f0f0;
+            --gray-medium: #e0e0e0;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fff;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.95) 0%, rgba(245,245,245,0.95) 100%);
+            z-index: -1;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            text-decoration: none;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            height: 70px; 
+        }
+        
+        header.scrolled {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem; 
+            max-width: 1400px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            gap: 11px;
+        }
+        
+        .logo-image {
+            height: 50px;
+            width: auto;
+            transition: var(--transition);
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        
+        .logo-main {
+            font-weight: 800;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo-sub {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: var(--dark-color);
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.4rem; 
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .language-toggle {
+            background: none;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 0.7rem; 
+            margin-left: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.8rem; 
+        }
+        
+        .language-toggle:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem; 
+            color: var(--dark-color);
+            z-index: 1100;
+        }
+        
+        .legal-hero {
+            height: 40vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+            margin-top: 70px;
+        }
+        
+        .legal-hero-content {
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+        
+        .legal-hero h1 {
+            font-size: 2.8rem; 
+            margin-bottom: 1.2rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        section {
+            padding: 5rem 2rem; 
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem; 
+        }
+        
+        .section-title {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            position: relative;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 3px;
+        }
+        
+        .legal-content {
+            background-color: white;
+            padding: 3rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+        
+        .legal-content h2 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .legal-content h3 {
+            color: var(--dark-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        .legal-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .legal-content ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .back-to-home:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+        
+        footer {
+            background: linear-gradient(to right, #222, #333);
+            color: white;
+            padding: 4rem 2rem 1.5rem;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 2.5rem; 
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1.5rem; 
+            color: white;
+            position: relative;
+            padding-bottom: 0.7rem; 
+            font-size: 1.3rem; 
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem; 
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem; 
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-links a i {
+            color: var(--primary-color);
+            width: 18px; 
+            font-size: 0.9rem; 
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 0.8rem; 
+            margin-top: 1.2rem; 
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px; 
+            height: 40px; 
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        .legal-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .legal-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+        
+        .legal-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2.5rem; 
+            margin-top: 2.5rem; 
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem; 
+        }
+        
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 260px;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 80px 1.5rem 1.5rem;
+                box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+            }
+            
+            .legal-hero h1 {
+                font-size: 2rem; 
+            }
+            
+            .section-title {
+                font-size: 1.8rem; 
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px; 
+                height: 50px;
+                font-size: 24px; 
+            }
+            
+            .legal-content {
+                padding: 1.8rem; 
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header-container {
+                padding: 0.5rem 1rem; 
+            }
+            
+            .section-title {
+                font-size: 1.6rem; 
+            }
+            
+            .section {
+                padding: 3.5rem 1.2rem; 
+            }
+            
+            .legal-hero h1 {
+                font-size: 1.8rem; 
+            }
+            
+            .logo-image {
+                height: 40px; 
+            }
+            
+            .logo-main {
+                font-size: 1.3rem; 
+            }
+            
+            .logo-sub {
+                font-size: 0.7rem;
+            }
+            
+            .legal-links {
+                gap: 1rem;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://wa.me/529981093631" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Nago Car Rental">
+                <img src="https://i.ibb.co/Mx1QhM5J/nago-logo.png" alt="Nago Car Rental" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-main">NAGO</div>
+                    <div class="logo-sub">CAR RENTAL</div>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#nosotros">Quiénes Somos</a></li>
+                    <li><a href="index.html#vehiculos">Vehículos</a></li>
+                    <li><a href="index.html#reservas">Reservas</a></li>
+                    <li><a href="index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <button class="language-toggle" id="language-toggle">
+                    <i class="fas fa-globe"></i> EN
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="legal-hero">
+        <div class="legal-hero-content">
+            <h1>Términos y Condiciones</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="legal-content">
+            <h2>1. Acuerdo</h2>
+            <p>Al utilizar nuestros servicios de renta de vehículos, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones. Por favor, revíselos cuidadosamente.</p>
+            
+            <h2>2. Requisitos de Renta</h2>
+            <p>Para rentar un vehículo de Nago Car Rental, debe cumplir con los siguientes requisitos:</p>
+            <ul>
+                <li>Ser mayor de 21 años de edad</li>
+                <li>Presentar una licencia de conducir válida con al menos 2 años de antigüedad</li>
+                <li>Proporcionar una identificación oficial vigente</li>
+                <li>Presentar una tarjeta de crédito válida a su nombre para el depósito de seguridad</li>
+                <li>Proporcionar prueba de seguro o adquirir nuestras opciones de cobertura</li>
+            </ul>
+            
+            <h2>3. Reservas y Pagos</h2>
+            <p>Todas las reservas están sujetas a disponibilidad de vehículos. Se puede requerir un depósito de reserva para asegurar su reservación. Aceptamos tarjetas de crédito principales y transferencias bancarias para pagos.</p>
+            <p>Los precios cotizados incluyen seguro básico pero pueden excluir tarifas adicionales como impuesto de turismo, cargos por aeropuerto o equipo opcional.</p>
+            
+            <h2>4. Política de Cancelación</h2>
+            <p>Las cancelaciones realizadas con 48 horas o más de antelación a la hora programada de recogida recibirán un reembolso completo. Las cancelaciones con menos de 48 horas de aviso estarán sujetas a una tarifa de cancelación equivalente a un día de tarifa de renta.</p>
+            <p>Los no presentados serán cobrados por el monto total de la reservación.</p>
+            
+            <h2>5. Período de Renta</h2>
+            <p>El período de renta comienza a la hora especificada en su reservación y termina cuando el vehículo es devuelto a nuestra ubicación. Ofrecemos un período de gracia de 29 minutos para devoluciones. Después de este período, se aplicarán cargos adicionales.</p>
+            <p>Los cargos por tiempo extra se calculan a 1/5 de la tarifa diaria por cada hora de retraso, con un máximo de una tarifa diaria completa por cada 5 horas de tiempo extra.</p>
+            
+            <h2>6. Uso del Vehículo</h2>
+            <p>El vehículo sólo puede ser conducido por los conductores autorizados listados en el contrato de renta. El vehículo no debe ser utilizado para:</p>
+            <ul>
+                <li>Transportar personas o propiedad para alquiler</li>
+                <li>Empujar o remolcar cualquier vehículo, remolque u otro objeto.</li>
+                <li>Cualquier propósito ilegal o carreras</li>
+                <li>Conducir en caminos no pavimentados o fuera de carretera</li>
+                <li>Transportar materiales peligrosos</li>
+            </ul>
+            
+            <h2>7. Seguro y Responsabilidad</h2>
+            <p>Todas las rentas incluyen seguro básico de responsabilidad civil según lo requiere la ley mexicana. Opciones de cobertura adicional están disponibles para su compra:</p>
+            <ul>
+                <li>Daños por colisión (CDW)</li>
+                <li>Protección contra robo (TP)</li>
+                <li>Seguro de accidentes personales (PAI)</li>
+                <li>Seguro de responsabilidad suplementario (SLI)</li>
+            </ul>
+            <p>Los arrendatarios son responsables de cualquier daño al vehículo independientemente de la culpa, hasta el valor total del vehículo, a menos que estén protegidos por las opciones de cobertura adquiridas.</p>
+            
+            <h2>8. Política de Combustible</h2>
+            <p>Los vehículos se proporcionan con un tanque lleno de combustible y deben ser devueltos con un tanque lleno. Si el vehículo se devuelve sin un tanque lleno, lo reabasteceremos a una tasa superior a los precios locales de combustible, más una tarifa de servicio.</p>
+            
+            <h2>9. Infracciones de Tránsito y Peajes</h2>
+            <p>Los arrendatarios son responsables de todas las infracciones de tránsito, multas de estacionamiento y peajes incurridos durante el período de renta. Se agregarán tarifas administrativas para procesar cualquier infracción recibida por Nago Car Rental.</p>
+            
+            <h2>10. Devolución del Vehículo</h2>
+            <p>Los vehículos deben ser devueltos a la ubicación especificada durante el horario comercial. Las devoluciones fuera del horario de atención pueden ser organizadas con anticipación y están sujetas a tarifas adicionales.</p>
+            <p>El vehículo será inspeccionado upon return. Cualquier daño nuevo será documentado y cobrado al arrendatario.</p>
+            
+            <h2>11. Modificaciones de los Términos</h2>
+            <p>Nago Car Rental se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios serán efectivos upon publicación en nuestro sitio web. El uso continuo de nuestros servicios constituye la aceptación de los términos modificados.</p>
+            
+            <h2>12. Ley Aplicable</h2>
+            <p>Estos términos y condiciones se rigen por las leyes de México y del Estado de Quintana Roo. Cualquier disputa será resuelta en los tribunales de Cancún, Quintana Roo.</p>
+            
+            <h2>13. Información de Contacto</h2>
+            <p>Para preguntas sobre estos términos y condiciones, por favor contáctenos en:</p>
+            <p>Email: reservaciones@nagocarrentals.com<br>
+            Teléfono: +52 998 109 3631<br>
+            Dirección: Blvrd. Luis D Colosio, Alfredo V Bonfil, Cancún, Q. Roo CP 77560</p>
+            
+            <p>Última actualización: Enero 2024</p>
+            
+            <a href="index.html" class="back-to-home">
+                <i class="fas fa-arrow-left"></i> Volver al Inicio
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nago Car Rental</h3>
+                <p>Su mejor opción en renta de autos en Cancún y Riviera Maya. Servicio confiable, precios competitivos y vehículos modernos.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Nagocarrental" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nagocarrental" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/529981093631" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="index.html#nosotros"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+                    <li><a href="index.html#vehiculos"><i class="fas fa-chevron-right"></i> Vehículos</a></li>
+                    <li><a href="index.html#reservas"><i class="fas fa-chevron-right"></i> Reservas</a></li>
+                    <li><a href="index.html#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Blvrd. Luis D Colosio, Alfredo V Bonfil, Cancún</li>
+                    <li><i class="fas fa-envelope"></i> reservaciones@nagocarrentals.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +52 998 109 3631</li>
+                    <li><i class="fas fa-clock"></i> De Lunes a Domingo de 08:00 a 19:00 hrs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="legal-links">
+            <a href="politica-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Nago Car Rental. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const languageToggle = document.getElementById('language-toggle');
+        let currentLanguage = 'es';
+        
+        languageToggle.addEventListener('click', () => {
+            if (currentLanguage === 'es') {
+                window.location.href = 'terminos-condiciones.html';
+            } else {
+                window.location.href = 'terminos-condiciones.html';
+            }
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
