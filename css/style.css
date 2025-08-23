@@ -210,7 +210,7 @@ nav {
     z-index: 1100;
 }
 
-/* Hero Section */
+/* Hero Section - Mejoras para responsividad */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
@@ -676,17 +676,35 @@ section {
     border: none;
 }
 
-/* Testimonials Section */
+/* Testimonials Section - Mejoras para responsividad */
 .testimonials {
-    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('https://i.ibb.co/wqJ5kf6/comments-blackcar-sunrise.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/wqJ5kf6/comments-blackcar-sunrise.png');
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    color: black;
+    color: white;
     text-align: center;
+    position: relative;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.testimonials > * {
+    position: relative;
+    z-index: 1;
 }
 
 .testimonials .section-title::after {
-    background: white
+    background: white;
 }
 
 .testimonials-header {
@@ -757,7 +775,7 @@ section {
     top: -25px; 
     left: -12px; 
     opacity: 0.1;
-    color: black;
+    color: white;
     font-family: Georgia, serif;
 }
 
@@ -1048,7 +1066,7 @@ footer {
     font-size: 0.9rem; 
 }
 
-/* Responsive Design */
+/* Responsive Design - Mejoras para imágenes de fondo */
 @media (max-width: 1200px) {
     .hero h1 {
         font-size: 2.8rem; 
@@ -1135,6 +1153,17 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    
+    /* Mejoras para imágenes de fondo en móviles */
+    .hero {
+        background-attachment: scroll;
+        background-position: center center;
+    }
+    
+    .testimonials {
+        background-attachment: scroll;
+        background-position: center center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1180,5 +1209,16 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+    
+    /* Ajustes adicionales para móviles pequeños */
+    .hero {
+        background-size: cover;
+        background-position: 65% center;
+    }
+    
+    .testimonials {
+        background-size: cover;
+        background-position: center center;
     }
 }
