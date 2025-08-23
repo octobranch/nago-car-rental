@@ -316,17 +316,18 @@ function setupContactForm() {
     const contactForm = document.getElementById('contact-form');
     if (!contactForm) return;
     
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    contactForm.addEventListener('submit', function(e) {
+        // No prevenir el comportamiento por defecto para permitir que FormSubmit funcione
+        // El formulario se enviará a través de FormSubmit a reservaciones@nagocarrentals.com
         
         // Determinar el idioma actual
         const currentPage = window.location.pathname;
         const isEnglishPage = currentPage.includes('index-en') || currentPage.includes('privacy-policy') || currentPage.includes('terms-and-conditions');
         
+        // Mostrar mensaje de confirmación (aunque FormSubmit redirigirá)
         alert(isEnglishPage ? 
             'Thank you for your message! We will contact you soon.' : 
             '¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-        contactForm.reset();
     });
 }
 
