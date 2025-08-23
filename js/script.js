@@ -1,5 +1,3 @@
-// script.js
-
 // Testimonios en español
 const testimonialsES = [
     {
