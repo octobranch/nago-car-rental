@@ -107,10 +107,9 @@ header.scrolled {
     gap: 11px;
 }
 
-/* Estilos para tu logo personalizado */
 .logo-image {
-    height: 50px; /* Ajusta según tu logo */
-    width: auto; /* Mantiene la proporción */
+    height: 50px;
+    width: auto;
     transition: var(--transition);
 }
 
@@ -210,20 +209,22 @@ nav {
     z-index: 1100;
 }
 
-/* Hero Section - Mejoras para responsividad */
+/* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     padding: 0 1rem;
-    margin-top: 0;
+    margin-top: 70px;
     position: relative;
 }
 
@@ -676,12 +677,14 @@ section {
     border: none;
 }
 
-/* Testimonials Section - Mejoras para responsividad */
+/* Testimonials Section - Imagen corregida */
 .testimonials {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/wqJ5kf6/comments-blackcar-sunrise.png');
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     position: relative;
@@ -701,6 +704,10 @@ section {
 .testimonials > * {
     position: relative;
     z-index: 1;
+}
+
+.testimonials .section-title {
+    color: white;
 }
 
 .testimonials .section-title::after {
@@ -774,7 +781,7 @@ section {
     position: absolute;
     top: -25px; 
     left: -12px; 
-    opacity: 0.1;
+    opacity: 0.2;
     color: white;
     font-family: Georgia, serif;
 }
@@ -895,7 +902,7 @@ section {
 }
 
 .contact-icon {
-    background-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     color: white;
     width: 45px; 
     height: 45px;
@@ -937,7 +944,7 @@ section {
 }
 
 .contact-form {
-    background-color: white;
+    background: white;
     padding: 2.5rem; 
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -946,6 +953,42 @@ section {
 .contact-form h3 {
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    min-height: 130px;
+    resize: vertical;
 }
 
 /* Footer */
@@ -1022,15 +1065,15 @@ footer {
     justify-content: center;
     width: 40px; 
     height: 40px; 
-    background-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     border-radius: 50%;
     transition: var(--transition);
-    font-size: 1.1rem; /* Tamaño reducido */
+    font-size: 1.1rem;
 }
 
 .social-links a:hover {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     transform: translateY(-5px);
 }
 
@@ -1066,7 +1109,7 @@ footer {
     font-size: 0.9rem; 
 }
 
-/* Responsive Design - Mejoras para imágenes de fondo */
+/* Responsive Design */
 @media (max-width: 1200px) {
     .hero h1 {
         font-size: 2.8rem; 
@@ -1099,9 +1142,9 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 260px; /* Ancho reducido */
+        width: 260px;
         height: 100vh;
-        background-color: white;
+        background: white;
         flex-direction: column;
         align-items: flex-start;
         padding: 80px 1.5rem 1.5rem;
@@ -1116,6 +1159,11 @@ footer {
     
     .nav-links li {
         margin: 1rem 0;
+    }
+    
+    .hero {
+        background-attachment: scroll;
+        margin-top: 70px;
     }
     
     .hero h1 {
@@ -1149,20 +1197,13 @@ footer {
         padding: 1.8rem; 
     }
     
+    .testimonials {
+        background-attachment: scroll;
+    }
+    
     .testimonials-controls {
         flex-direction: column;
         align-items: center;
-    }
-    
-    /* Mejoras para imágenes de fondo en móviles */
-    .hero {
-        background-attachment: scroll;
-        background-position: center center;
-    }
-    
-    .testimonials {
-        background-attachment: scroll;
-        background-position: center center;
     }
 }
 
@@ -1188,6 +1229,10 @@ footer {
         padding: 3.5rem 1.2rem; 
     }
     
+    .hero {
+        background-position: 65% center;
+    }
+    
     .hero h1 {
         font-size: 1.8rem; 
     }
@@ -1205,20 +1250,8 @@ footer {
     }
     
     .legal-links {
-        gap: 1rem;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
-    
-    /* Ajustes adicionales para móviles pequeños */
-    .hero {
-        background-size: cover;
-        background-position: 65% center;
-    }
-    
-    .testimonials {
-        background-size: cover;
-        background-position: center center;
+        gap: 1rem;
     }
 }
